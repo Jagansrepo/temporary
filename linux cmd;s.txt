@@ -1,0 +1,71 @@
+Course 5: https://university.webflow.com/courses/webflow-101
+
+
+Linux cmd's:
+vim creates text editor .(vim main.py)                   to go into insert mode press i
+   to exit: type "esc+:wq". for save and exit
+        	 "esc+:q!". for discard and exit
+
+
+touch: create an new empty file or update the timestamp of the existing file
+cat  :concatenate and display files
+man: manual for command
+htop : an interactive process viewer and system monitor     ||  top: display system resource usage and processes 
+chmod : change permissions of files or directory.(use chmod calculator)
+chown: change the owner of the file or directory.
+        sudo apt update(sudo: execute a command  as another user or with elevated privileges)
+        sudo apt install apache2
+tar: create or extract compressed archive files
+gzip : compress the files  gzip file.txt
+gunzip : decompress the files  gunzip file.txt.gz
+ssh : connect to remote server securely    ssh username@server_address
+scp : securely copy files between systems  scp myfile.txt user@remotehost:/home/user
+ping: test network connectivity.
+ifconfig : display or configure network interfaces
+netstat : display network connection information
+route : view or configure network routing tables
+ps (ps -ef): display information about the running processes
+kill: terminate a process. kill[pid]
+systemctl:control system services and settings.
+         systemctl status 
+	 systemctl start
+	 systemctl stop
+service: control system services
+       ex:service apache2 start
+useradd: add new user to system           useradd harry
+passwd: change the password for the user  passwd harry
+userdel: delete user from the system      userdel harry
+su: switch user to another user su harry
+uptime: display system uptime and load average
+df: display disk space usage
+du: display disk usage by file or directory
+mount: mount a file system
+unmount: unmount a file system
+date: displays or set the system date and time
+whoami: display current username
+which: locate a program or  command in the system path
+finger: display all information about the user
+uname(uname -a): display system information
+history: displays a list of previously executed commands
+echo: display text or variables to the console
+tee: redirect output to both file and the console
+       ls | tee  file.txt
+locate: locate any file on the system
+sort: sort lines of text  in a file or input
+uniq: removes all duplicate  lines from a file or input
+'head'/'tail': display the first/last few lines of a file or input
+
+------------------------------------------------------------------------------------------------------------------
+
+jobs-displays the jobs that are processing
+bg-runs processes in background
+fg-runs processes in foreground
+How to resume a specific job.
+  bg %<job_id>
+  fg %<job_id>
+nice value: Niceness scale goes from -20 to 19.The lower the number more priority that task gets.
+            process priority=nice
+	    (ex: nice -n 5 process)
+nohup:  if you want your process keep running even after closing your terminal, you can use nohup.
+	nohup process &
+	nohup process>/dev/null 2>&1&
